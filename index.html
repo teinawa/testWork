@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<form action="#" id="form" class="signup-form" name="signUp">
+    <div class="form__header">
+        <h1>Sign Up</h1>
+    </div>
+    <div class="form__inner">
+        <div class="form__items-horizontal">
+            <div class="form__item left">
+                <label for="firstName"></label>
+                <input
+                        id="firstName"
+                        type="text"
+                        class="form__input"
+                        placeholder="First Name"
+                />
+                <small class="name-error"></small>
+            </div>
+            <div class="form__item right">
+                <label for="lastName"></label>
+                <input
+                        id="lastName"
+                        type="text"
+                        name="lastName"
+                        class="form__input"
+                        placeholder="Last Name"
+                />
+                <small class="name-error"></small>
+            </div>
+        </div>
+
+        <div class="form__items-horizontal">
+            <div class="form__item left genders__group">
+                <label class="label__title">Genders</label>
+                <div class="genders__input">
+                    <label for="male"  class="gender__label"
+                    ><input
+                            id="male"
+                            name="gender"
+                            type="radio"
+                            class="genders__input"
+                            value="male"
+                            checked
+
+                    />Male
+                        <small class="gender-error"></small></label
+                    >
+                    <label for="female" class="gender__label"
+                    ><input
+                            id="female"
+                            name="gender"
+                            type="radio"
+                            class="genders__input"
+                            value="female"
+                    />Female
+                        <small class="gender-error"></small></label
+                    >
+                </div>
+            </div>
+            <div class="form__item right age">
+                <label for="age" class="label__title">Age</label>
+                <input
+                        id="age"
+                        type="number"
+                        class="age__input"
+                        min="10"
+                        max="100"
+                        step="1"
+                />
+                <small class="age-error"></small>
+            </div>
+        </div>
+
+        <div class="form__item-horizontal">
+            <label for="email" class="form__label">Email</label>
+            <input id="email" type="text" class="form__input" />
+            <small class="email-error"></small>
+        </div>
+        <div class="form__items-horizontal password">
+            <div class="form__item left">
+                <label for="password" class="form__label">Password</label>
+                <input
+                        id="password"
+                        type="password"
+                        class="form__input password-symbol"
+                />
+                <span class="asterisk" id="asterisk-password"></span>
+                <small class="password-error"></small>
+            </div>
+
+            <div class="form__item right confirm">
+                <label for="confirm" class="form__label">Confirm password</label>
+                <input
+                        id="confirm"
+                        type="password"
+                        class="form__input password-symbol"
+                />
+                <span class="asterisk" id="asterisk-confirm"></span>
+                <small class="password-error"></small>
+            </div>
+        </div>
+    </div>
+    <div class="form__footer">
+        <input id="send-form" type="submit" class="form__btn" value="Sign Up" />
+    </div>
+</form>
+<div id="user-info" class="user-info">
+    <div class="user-info__body">
+        <div class="user-info__inner">
+            <div class="user-info__names">
+                <div class="user-info__item">
+                    First Name:
+                    <i></i>
+                    <p id="userInfoFirstName"></p>
+                </div>
+
+                <div class="user-info__item">
+                    Last Name:
+                    <i></i>
+                    <p id="userInfoLastName"></p>
+                </div>
+            </div>
+            <div class="user-info__age-gender">
+                <div class="user-info__item">
+                    Gender:
+                    <p id="userInfoGender"></p>
+                </div>
+
+                <div class="user-info__item">
+                    Age:
+                    <p id="userInfoAge"></p>
+                </div>
+            </div>
+            <div class="user-info__email-password">
+                <div class="user-info__item">
+                    Email:
+                    <p id="userInfoEmail"></p>
+                </div>
+
+                <div class="user-info__item">
+                    Password:
+                    <p id="userInfoPassword"></p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="user-info__footer">
+        <button class="user-info__close">Sign Up again</button>
+        </div>
+    </div>
+</div>
+<div class="users-list">
+
+</div>
+
+<script src="main.js"></script>
+<script src="create.js"></script>
+</body>
+
+</html>
